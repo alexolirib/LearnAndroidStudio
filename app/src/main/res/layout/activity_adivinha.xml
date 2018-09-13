@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="298dp"
+        android:layout_height="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Escolha um número entre 0 e 10"
+        android:textSize="@dimen/tamanho_default"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="18dp" />
+
+    <Button
+        android:id="@+id/btnJogarId"
+        android:layout_width="212dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="158dp"
+        android:text="@string/botao_jogar"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <TextView
+        android:id="@+id/lblResultId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="222dp"
+        android:text="@string/texto_numero"
+        android:textSize="@dimen/tamanho_default"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="191dp" />
+</android.widget.RelativeLayout>
