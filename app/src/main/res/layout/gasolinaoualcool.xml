@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="300dp"
+        android:layout_height="81dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_marginTop="131dp"
+        android:text="Preço Álcool"
+        android:textColor="@color/cor_desc"
+        android:textSize="@dimen/text_medio" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_alignTop="@+id/textView"
+        android:textColor="@color/cor_desc"
+        android:textSize="@dimen/text_medio"
+        android:text="Preço Gasolina" />
+
+    <EditText
+        android:id="@+id/txtPrecoGasolinaId"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_alignTop="@+id/txtPrecoAlcoolId"
+        android:background="#Fff"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/txtPrecoAlcoolId"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="170dp"
+        android:background="#Fff"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/btnVerificaPrecoId"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="211dp"
+        android:text="VERIFICAR" />
+
+    <TextView
+        android:id="@+id/lblResultadoPrecoId"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="142dp"
+        android:textColor="@color/cor_desc"
+        android:textSize="@dimen/text_medio" />
+</android.widget.RelativeLayout>

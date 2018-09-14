@@ -25,9 +25,16 @@ public class MainActivity extends AppCompatActivity {
             "Os empreendedores falham, em média, 3,8 vezes antes do sucesso final. O que separa os bem-sucedidos dos outros é a persistência"};*/
     //idade do cachorro
 
-    private EditText txtIdadeCachorro;
+   /* private EditText txtIdadeCachorro;
     private Button btnCalcularIdade;
-    private TextView resultadoIdade;
+    private TextView resultadoIdade;*/
+
+    //preço gasolina ou alcool
+
+   private EditText txtAlcool;
+   private EditText txtGasolina;
+   private Button btnVerificaPreco;
+   private TextView lblResultado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +42,39 @@ public class MainActivity extends AppCompatActivity {
 //        setContentView(R.layout.activity_main);
        // setContentView(R.layout.activity_adivinha);
         //setContentView(R.layout.activity_frasedodia);
-        setContentView(R.layout.activity_idadecachorro);
+       // setContentView(R.layout.activity_idadecachorro);
+        setContentView(R.layout.gasolinaoualcool);
+
+        //preço gasolina ou alcool
+        txtAlcool = findViewById(R.id.txtPrecoAlcoolId);
+        txtGasolina = findViewById(R.id.txtPrecoGasolinaId);
+        btnVerificaPreco = findViewById(R.id.btnVerificaPrecoId);
+        lblResultado = findViewById(R.id.lblResultadoPrecoId);
+
+        btnVerificaPreco.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String textoAlcool = txtAlcool.getText().toString();
+                String textoGasolina = txtGasolina.getText().toString();
+
+                Double valorAlcool = Double.parseDouble(textoAlcool);
+                Double valorGasolina = Double.parseDouble(textoGasolina);
+
+                //verifica alcool / gasolina
+                double resultado = valorAlcool / valorGasolina;
+                // + 0.7 gasolina
+                if(resultado >= 0.7){
+                    lblResultado.setText("É melhor usar gasolina");
+                }else{
+                    lblResultado.setText("É melhor usar Alcool");
+                }
+
+            }
+        });
 
         //idade do cachorro
 
-        txtIdadeCachorro = findViewById(R.id.txtIdadeCachorroId);
+        /*txtIdadeCachorro = findViewById(R.id.txtIdadeCachorroId);
         btnCalcularIdade = findViewById(R.id.btnDescobrirIdadeId);
         resultadoIdade = findViewById(R.id.lblIdadeHumanoId);
 
@@ -60,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
             }
-        });
+        });*/
 
 
         //adivinha

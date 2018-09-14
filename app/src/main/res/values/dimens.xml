@@ -2,4 +2,5 @@
 <resources>
     <dimen name="tamanho_default">20sp</dimen>
     <dimen name="text_large">35sp</dimen>
+    <dimen name="text_medio">22sp</dimen>
 </resources>
