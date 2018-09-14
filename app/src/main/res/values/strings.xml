@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">LearnAndroidStudio</string>
-    <string name="botao_jogar">Jogar</string>
+    <string name="botao_jogar">play</string>
     <string name="texto_numero">Nenhum número</string>
 </resources>
