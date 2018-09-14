@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b6812b"
+    android:hapticFeedbackEnabled="false">
+
+    <Button
+        android:id="@+id/btnNovaFraseId"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="NOVA FRASE" />
+
+    <TextView
+        android:id="@+id/textoNovaFraseId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="113dp"
+        android:text="Frases"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/text_large" />
+</android.widget.RelativeLayout>
