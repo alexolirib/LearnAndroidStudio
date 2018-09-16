@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AlcoolOuGasolinaActivity" />
+        <activity android:name=".AdivinhaNumActivity" />
+        <activity android:name=".FrasesDoDiaActivity" />
+        <activity android:name=".IdadeCachorroActivity"></activity>
     </application>
 
 </manifest>

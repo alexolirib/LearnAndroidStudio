@@ -1,132 +1,92 @@
 package learnandroidstudio.studio.alexo.learnandroidstudio;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.Toast;
 
-import java.util.Random;
+public class MainActivity extends Activity {
 
-public class MainActivity extends AppCompatActivity {
-
-//    private Button btnJogar;
-//    private TextView lblResult;
-
-    //nova frase dia
-    /*private TextView lblNovaFrase;
-    private Button botaoNovaFrase;
-    private String[] frases = {
-            "Você pode, você é capaz",
-            "Se você traçar metas absurdamente altas e falhar, seu fracasso será muito melhor que o sucesso de todos\" – James Cameron, cineasta",
-            "O sucesso normalmente vem para quem está ocupado demais para procurar por ele",
-            "A vida é melhor para aqueles que fazem o possível para ter o melhor",
-            "Os empreendedores falham, em média, 3,8 vezes antes do sucesso final. O que separa os bem-sucedidos dos outros é a persistência"};*/
-    //idade do cachorro
-
-   /* private EditText txtIdadeCachorro;
-    private Button btnCalcularIdade;
-    private TextView resultadoIdade;*/
-
-    //preço gasolina ou alcool
-
-   private EditText txtAlcool;
-   private EditText txtGasolina;
-   private Button btnVerificaPreco;
-   private TextView lblResultado;
+    private Button btnAbrirGasolinaOuAlcool;
+    private Button btnAbrirCachorro;
+    private Button btnAbrirFraseDoDia;
+    private Button btnAbrirAdivinha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
-       // setContentView(R.layout.activity_adivinha);
-        //setContentView(R.layout.activity_frasedodia);
-       // setContentView(R.layout.activity_idadecachorro);
-        setContentView(R.layout.gasolinaoualcool);
+        setContentView(R.layout.activity_main);
 
-        //preço gasolina ou alcool
-        txtAlcool = findViewById(R.id.txtPrecoAlcoolId);
-        txtGasolina = findViewById(R.id.txtPrecoGasolinaId);
-        btnVerificaPreco = findViewById(R.id.btnVerificaPrecoId);
-        lblResultado = findViewById(R.id.lblResultadoPrecoId);
+        //makeText(contexto(onde será exibido), mensagem, duração)
+        Toast.makeText(getApplicationContext(), "onCreate metodo chamado", Toast.LENGTH_SHORT).show();
 
-        btnVerificaPreco.setOnClickListener(new View.OnClickListener() {
+        btnAbrirGasolinaOuAlcool = findViewById(R.id.btnAbrirAlcoolId);
+        btnAbrirCachorro = findViewById(R.id.btnAbrirCachorroId);
+        btnAbrirFraseDoDia = findViewById(R.id.btnAbrirFraseId);
+        btnAbrirAdivinha = findViewById(R.id.btnAbrirAdivinha);
+
+
+        btnAbrirGasolinaOuAlcool.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String textoAlcool = txtAlcool.getText().toString();
-                String textoGasolina = txtGasolina.getText().toString();
-
-                Double valorAlcool = Double.parseDouble(textoAlcool);
-                Double valorGasolina = Double.parseDouble(textoGasolina);
-
-                //verifica alcool / gasolina
-                double resultado = valorAlcool / valorGasolina;
-                // + 0.7 gasolina
-                if(resultado >= 0.7){
-                    lblResultado.setText("É melhor usar gasolina");
-                }else{
-                    lblResultado.setText("É melhor usar Alcool");
-                }
-
+                //serve ir para um Activity para outro(primeiro de onde vou e o outro onde quero ir)
+                startActivity(new Intent(MainActivity.this, AlcoolOuGasolinaActivity.class));
             }
         });
 
-        //idade do cachorro
-
-        /*txtIdadeCachorro = findViewById(R.id.txtIdadeCachorroId);
-        btnCalcularIdade = findViewById(R.id.btnDescobrirIdadeId);
-        resultadoIdade = findViewById(R.id.lblIdadeHumanoId);
-
-        btnCalcularIdade.setOnClickListener(new View.OnClickListener() {
+        btnAbrirCachorro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                //recuperar que foi digitado
-                String idadeCachorro = txtIdadeCachorro.getText().toString();
-
-                if(idadeCachorro.isEmpty()){
-                    //string vazia(Erro)
-                    resultadoIdade.setText("nenhuma texto digitado");
-                }else{
-                    int valorDigitado = Integer.parseInt(idadeCachorro);
-                    resultadoIdade.setText("Idade do cachorro em anos humanos é: " + valorDigitado*7 + " anos" );
-                    txtIdadeCachorro.setText("");
-                }
-
+                startActivity(new Intent(MainActivity.this, IdadeCachorroActivity.class));
             }
-        });*/
+        });
 
-
-        //adivinha
-//
-//        btnJogar = findViewById(R.id.btnJogarId);
-//        lblResult = findViewById(R.id.lblResultId);
-
-//        lblResult.setText("troquei o valor");
-       /* btnJogar.setOnClickListener(new View.OnClickListener() {
+        btnAbrirFraseDoDia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //gerar numero randomico
-
-                Random randomico = new Random();
-                int numeroAleatorio = randomico.nextInt(10);
-                lblResult.setText("Número escolhido: " + numeroAleatorio);
-                //lblResult.setText("Texto alterado");
+                startActivity(new Intent(MainActivity.this, FrasesDoDiaActivity.class));
             }
-        });*/
+        });
 
-        //nova frase do dia
-        /*lblNovaFrase = findViewById(R.id.textoNovaFraseId);
-        botaoNovaFrase = findViewById(R.id.btnNovaFraseId);
-
-        botaoNovaFrase.setOnClickListener(new View.OnClickListener() {
+        btnAbrirAdivinha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Random randomico = new Random();
-                int numAleatorio = randomico.nextInt(frases.length);
-                lblNovaFrase.setText(frases[numAleatorio]);
+                startActivity(new Intent(MainActivity.this, AdivinhaNumActivity.class));
             }
-        });*/
+        });
+
+
     }
+
+    /*@Override
+    protected void onStart() {
+        super.onStart();
+        Toast.makeText(getApplicationContext(), "onStart metodo chamado", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Toast.makeText(getApplicationContext(), "onRestart metodo chamado", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Toast.makeText(getApplicationContext(), "onResume metodo chamado", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Toast.makeText(getApplicationContext(), "onPause metodo chamado", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Toast.makeText(getApplicationContext(), "onDestroy metodo chamado", Toast.LENGTH_SHORT).show();
+    }*/
 }

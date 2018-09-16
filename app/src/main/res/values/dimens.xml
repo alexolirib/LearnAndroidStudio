@@ -3,4 +3,6 @@
     <dimen name="tamanho_default">20sp</dimen>
     <dimen name="text_large">35sp</dimen>
     <dimen name="text_medio">22sp</dimen>
+    <dimen name="widthBtnMain">108dp</dimen>
+    <dimen name="heightBtnMain" >90dp</dimen>
 </resources>
