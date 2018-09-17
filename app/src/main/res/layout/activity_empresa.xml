@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmpresaActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/img_margem_left"
+        android:layout_marginTop="@dimen/img_margem_top"
+        android:background="@drawable/detalhe_empresa"
+        android:src="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="74dp"
+        android:layout_marginTop="39dp"
+        android:text="Sobre a empresa"
+        android:textColor="#000"
+        android:textSize="@dimen/text_medio" />
+
+    <ScrollView
+        android:layout_width="320dp"
+        android:layout_height="404dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_marginTop="107dp"
+        android:background="#ccc">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun          dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit           ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit           ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem           sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit            ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem             Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun             dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem             sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem             Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit             ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem             sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem             sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem              sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit ametLorem Ipsun dolorem sit amet"
+            android:textSize="24sp" />
+    </ScrollView>
+
+
+</android.widget.RelativeLayout>

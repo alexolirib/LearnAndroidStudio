@@ -5,4 +5,7 @@
     <dimen name="text_medio">22sp</dimen>
     <dimen name="widthBtnMain">108dp</dimen>
     <dimen name="heightBtnMain" >90dp</dimen>
+    <dimen name="padding_default">10dp</dimen>
+    <dimen name="img_margem_top">13dp</dimen>
+    <dimen name="img_margem_left">39dp</dimen>
 </resources>
