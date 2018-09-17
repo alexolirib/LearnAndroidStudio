@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
 
         <!-- aqui escolhe qual o main da aplicação -->
-        <activity android:name=".MainActivity">
+        <activity android:name=".CaraOuCoroaActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,7 +26,9 @@
         <activity android:name=".EmpresaActivity" />
         <activity android:name=".ServicoActivity" />
         <activity android:name=".ClienteActivity" />
-        <activity android:name=".ContatoActivity"></activity>
+        <activity android:name=".ContatoActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".DetalheCaraOuCoroaActivity"></activity>
     </application>
 
 </manifest>
