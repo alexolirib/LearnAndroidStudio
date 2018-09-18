@@ -28,7 +28,8 @@
         <activity android:name=".ClienteActivity" />
         <activity android:name=".ContatoActivity" />
         <activity android:name=".CaraOuCoroaActivity" />
-        <activity android:name=".DetalheCaraOuCoroaActivity"></activity>
+        <activity android:name=".DetalheCaraOuCoroaActivity" />
+        <activity android:name=".NetflixInterfaceActivity"></activity>
     </application>
 
 </manifest>
