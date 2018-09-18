@@ -14,6 +14,7 @@ public class MainActivity extends Activity {
     private Button btnAbrirFraseDoDia;
     private Button btnAbrirAdivinha;
     private Button btnAbrirAtmConsultoria;
+    private Button btnAbrirCaraOuCoroa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,7 @@ public class MainActivity extends Activity {
         btnAbrirFraseDoDia = findViewById(R.id.btnAbrirFraseId);
         btnAbrirAdivinha = findViewById(R.id.btnAbrirAdivinha);
         btnAbrirAtmConsultoria = findViewById(R.id.btnAbrirAtmConsultoriaId);
-
+        btnAbrirCaraOuCoroa  = findViewById(R.id.btnAbrirCaraOuCoroaId);
 
         btnAbrirGasolinaOuAlcool.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +64,13 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, AtmEmpresaConsultoriaActivity.class));
+            }
+        });
+
+        btnAbrirCaraOuCoroa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, CaraOuCoroaActivity.class));
             }
         });
 

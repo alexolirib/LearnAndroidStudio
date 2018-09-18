@@ -26,6 +26,14 @@
         android:text="ADIVINHA" />
 
     <Button
+        android:id="@+id/btnAbrirCaraOuCoroaId"
+        android:layout_width="@dimen/widthBtnMain"
+        android:layout_height="@dimen/heightBtnMain"
+        android:layout_alignStart="@+id/btnAbrirCachorroId"
+        android:layout_alignTop="@+id/btnAbrirFraseId"
+        android:text="Cara ou Coroa" />
+
+    <Button
         android:id="@+id/btnAbrirFraseId"
         android:layout_width="@dimen/widthBtnMain"
         android:layout_height="@dimen/heightBtnMain"
