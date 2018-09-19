@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
 
         <!-- aqui escolhe qual o main da aplicação -->
-        <activity android:name=".MainActivity">
+        <activity android:name=".InputsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,7 +31,8 @@
         <activity android:name=".DetalheCaraOuCoroaActivity" />
         <activity android:name=".NetflixInterfaceActivity" />
         <activity android:name=".SignosActivity" />
-        <activity android:name=".ListViewActivity"></activity>
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
