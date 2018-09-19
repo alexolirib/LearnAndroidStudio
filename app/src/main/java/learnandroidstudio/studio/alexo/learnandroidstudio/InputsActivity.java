@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.Toast;
 
 public class InputsActivity extends Activity {
@@ -14,10 +15,26 @@ public class InputsActivity extends Activity {
     private Button botaoDialog;
     private AlertDialog.Builder dialog;
 
+    //checkbox
+    private CheckBox cbCao;
+    private CheckBox cbGato;
+    private CheckBox cbPapagaio;
+
+    private Button btnMostrar;
+    private AlertDialog.Builder dialogMostrar;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inputs);
+
+        cbCao = findViewById(R.id.cbCao);
+        cbGato = findViewById(R.id.cbGatoId);
+        cbPapagaio = findViewById(R.id.cbPapagaioId);
+
+        btnMostrar = findViewById(R.id.btnMostrarId);
+
 
         botaoDialog = findViewById(R.id.btnDialog);
         botaoDialog.setOnClickListener(new View.OnClickListener() {
