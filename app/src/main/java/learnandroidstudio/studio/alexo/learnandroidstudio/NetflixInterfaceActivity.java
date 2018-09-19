@@ -1,9 +1,10 @@
 package learnandroidstudio.studio.alexo.learnandroidstudio;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class NetflixInterfaceActivity extends AppCompatActivity {
+public class NetflixInterfaceActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
