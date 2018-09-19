@@ -114,5 +114,15 @@
         app:layout_constraintStart_toEndOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/btnAbrirAtmConsultoriaId" />
 
+    <Button
+        android:id="@+id/btnAbrirSignosId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="signos"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbrirNetflixId" />
+
 </android.support.constraint.ConstraintLayout>
 </ScrollView>

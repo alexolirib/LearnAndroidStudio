@@ -16,6 +16,7 @@ public class MainActivity extends Activity {
     private Button btnAbrirAtmConsultoria;
     private Button btnAbrirCaraOuCoroa;
     private Button btnAbrirNetflix;
+    private Button btnAbrirSignos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,7 @@ public class MainActivity extends Activity {
         btnAbrirAtmConsultoria = findViewById(R.id.btnAbrirAtmConsultoriaId);
         btnAbrirCaraOuCoroa  = findViewById(R.id.btnAbrirCaraOuCoroaId);
         btnAbrirNetflix = findViewById(R.id.btnAbrirNetflixId);
+        btnAbrirSignos = findViewById(R.id.btnAbrirSignosId);
 
         btnAbrirGasolinaOuAlcool.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,6 +82,13 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, NetflixInterfaceActivity.class));
+            }
+        });
+
+        btnAbrirSignos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SignosActivity.class));
             }
         });
 
