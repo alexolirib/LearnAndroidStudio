@@ -17,6 +17,8 @@ public class MainActivity extends Activity {
     private Button btnAbrirCaraOuCoroa;
     private Button btnAbrirNetflix;
     private Button btnAbrirSignos;
+    private Button btnAbrirSerie;
+    private Button btnAbrirNextPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,8 @@ public class MainActivity extends Activity {
         btnAbrirCaraOuCoroa  = findViewById(R.id.btnAbrirCaraOuCoroaId);
         btnAbrirNetflix = findViewById(R.id.btnAbrirNetflixId);
         btnAbrirSignos = findViewById(R.id.btnAbrirSignosId);
+        btnAbrirSerie = findViewById(R.id.btnAbrirSerieId);
+        btnAbrirNextPage = findViewById(R.id.btnAbrirNextSessionId);
 
         btnAbrirGasolinaOuAlcool.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,6 +93,20 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, SignosActivity.class));
+            }
+        });
+
+        btnAbrirSerie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SerieActivity.class));
+            }
+        });
+
+        btnAbrirNextPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Main2Activity.class));
             }
         });
 
