@@ -34,7 +34,8 @@
         <activity android:name=".ListViewActivity" />
         <activity android:name=".SerieActivity" />
         <activity android:name=".InputsActivity" />
-        <activity android:name=".Main2Activity"></activity>
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".SomDosBixosActivity"></activity>
     </application>
 
 </manifest>

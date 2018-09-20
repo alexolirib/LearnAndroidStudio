@@ -152,7 +152,7 @@
     <ToggleButton
         android:id="@+id/tgbButtonId"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginEnd="149dp"
         android:layout_marginLeft="147dp"
         android:layout_marginRight="149dp"
@@ -161,6 +161,7 @@
         android:textOff="Desligado"
         android:textOn="Ligado"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblSeekBarId" />
 
@@ -176,5 +177,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tgbButtonId" />
+
+    <Button
+        android:id="@+id/btnTocarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginTop="26dp"
+        android:text="TOCAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMostraRb" />
 
 </android.support.constraint.ConstraintLayout>

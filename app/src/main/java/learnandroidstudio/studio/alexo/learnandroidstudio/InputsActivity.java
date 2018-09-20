@@ -3,6 +3,7 @@ package learnandroidstudio.studio.alexo.learnandroidstudio;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -43,10 +44,55 @@ public class InputsActivity extends Activity {
     private ToggleButton toggleButton;
     private TextView lblToggleButton;
 
+    //media player
+    private  Button btnToPlay;
+    private MediaPlayer mediaPlayerMusic;
+
+    private void tocarMusica(){
+        //verifica se existe mesmo
+        if(mediaPlayerMusic != null){
+            mediaPlayerMusic.start();
+            btnToPlay.setText("PAUSAR");
+        }
+    }
+    private void pausarMusica(){
+        if(mediaPlayerMusic != null){
+            mediaPlayerMusic.pause();
+            btnToPlay.setText("TOCAR");
+        }
+    }
+
+    //sobrescrever esse método bom destroir música , midia no final da aplicação
+    @Override
+    protected void onDestroy() {
+        if(mediaPlayerMusic != null && mediaPlayerMusic.isPlaying() ){
+            mediaPlayerMusic.stop();
+            mediaPlayerMusic.release();
+            mediaPlayerMusic = null;
+        }
+        super.onDestroy();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inputs);
+
+        //media player
+        btnToPlay = findViewById(R.id.btnTocarId);
+        mediaPlayerMusic = MediaPlayer.create(getApplicationContext(),R.raw.musica);
+
+        btnToPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //se está tocando
+                if(mediaPlayerMusic.isPlaying()){
+                    pausarMusica();
+                } else
+                    tocarMusica();
+            }
+        });
+
 
         //toggleButton
         toggleButton = findViewById(R.id.tgbButtonId);
