@@ -34,8 +34,11 @@
         <activity android:name=".ListViewActivity" />
         <activity android:name=".SerieActivity" />
         <activity android:name=".InputsActivity" />
+        <activity android:name=".SharedPreferencesNomeActivity" />
+        <activity android:name=".SomDosBixosActivity" />
         <activity android:name=".Main2Activity" />
-        <activity android:name=".SomDosBixosActivity"></activity>
+        <activity android:name=".PreferenciasCorUsuarioActivity" />
+        <activity android:name=".MinhaAnotacaoActivity"></activity>
     </application>
 
 </manifest>

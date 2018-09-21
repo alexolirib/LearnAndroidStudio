@@ -54,6 +54,10 @@ public class SomDosBixosActivity extends Activity implements View.OnClickListene
                 somDosBixos = MediaPlayer.create(SomDosBixosActivity.this,R.raw.leao);
                 tocarSom();
                 break;
+            case R.id.imgMonkeyId:
+                somDosBixos = MediaPlayer.create(SomDosBixosActivity.this, R.raw.macaco);
+                tocarSom();
+                break;
             case R.id.imgCowId:
                 somDosBixos = MediaPlayer.create(SomDosBixosActivity.this,R.raw.vaca);
                 tocarSom();
