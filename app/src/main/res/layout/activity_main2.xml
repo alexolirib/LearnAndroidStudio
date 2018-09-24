@@ -69,4 +69,16 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
         app:layout_constraintTop_toBottomOf="@+id/btnAbrirCorEscolhidaId" />
+
+    <Button
+        android:id="@+id/btnAbrirListTarefaSqLite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="6dp"
+        android:text="Lista Tarefa"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbrirAnotacoesId" />
 </android.support.constraint.ConstraintLayout>

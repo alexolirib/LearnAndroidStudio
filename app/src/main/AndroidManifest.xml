@@ -38,7 +38,8 @@
         <activity android:name=".SomDosBixosActivity" />
         <activity android:name=".Main2Activity" />
         <activity android:name=".PreferenciasCorUsuarioActivity" />
-        <activity android:name=".MinhaAnotacaoActivity"></activity>
+        <activity android:name=".MinhaAnotacaoActivity" />
+        <activity android:name=".TaskListActivity"></activity>
     </application>
 
 </manifest>
