@@ -50,6 +50,8 @@ public class PreferenciasCorUsuarioActivity extends Activity {
             }
         });
 
+        
+
         //recuperar cor salva
         SharedPreferences sharedPreferences = getSharedPreferences(ARQUIVO_PREFERENCIA, 0);
         if (sharedPreferences.contains("corEscolhida")) {

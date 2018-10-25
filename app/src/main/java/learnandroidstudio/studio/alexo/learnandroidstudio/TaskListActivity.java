@@ -34,7 +34,7 @@ public class TaskListActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task_list);
-
+ 
         try {
             //recuperar componentes
             txtTarefa = findViewById(R.id.txtListTarefa);
