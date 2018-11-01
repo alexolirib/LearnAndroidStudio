@@ -15,6 +15,7 @@ public class Main2Activity extends Activity implements View.OnClickListener {
     private Button btnAbrirCorEscolhida;
     private Button btnAbrirAnotacoes;
     private Button btnAbrirListTarefa;
+    private Button btnAbrirFragmento;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public class Main2Activity extends Activity implements View.OnClickListener {
         btnAbrirCorEscolhida = findViewById(R.id.btnAbrirCorEscolhidaId);
         btnAbrirAnotacoes = findViewById(R.id.btnAbrirAnotacoesId);
         btnAbrirListTarefa = findViewById(R.id.btnAbrirListTarefaSqLite);
+        btnAbrirFragmento = findViewById(R.id.btnAbrirFragmento);
 
         btnAbrirInputs.setOnClickListener(this);
         btnAbrirSomAnimal.setOnClickListener(this);
@@ -34,6 +36,7 @@ public class Main2Activity extends Activity implements View.OnClickListener {
         btnAbrirCorEscolhida.setOnClickListener(this);
         btnAbrirAnotacoes.setOnClickListener(this);
         btnAbrirListTarefa.setOnClickListener(this);
+        btnAbrirFragmento.setOnClickListener(this);
 
     }
 
@@ -58,6 +61,9 @@ public class Main2Activity extends Activity implements View.OnClickListener {
                 break;
             case R.id.btnAbrirListTarefaSqLite:
                 startActivity(new Intent(Main2Activity.this, TaskListActivity.class));
+                break;
+            case R.id.btnAbrirFragmento:
+                startActivity(new Intent(Main2Activity.this, FragmentoActivity.class));
                 break;
 
 

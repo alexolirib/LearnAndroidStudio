@@ -39,7 +39,8 @@
         <activity android:name=".Main2Activity" />
         <activity android:name=".PreferenciasCorUsuarioActivity" />
         <activity android:name=".MinhaAnotacaoActivity" />
-        <activity android:name=".TaskListActivity"></activity>
+        <activity android:name=".TaskListActivity" />
+        <activity android:name=".FragmentoActivity"></activity>
     </application>
 
 </manifest>
